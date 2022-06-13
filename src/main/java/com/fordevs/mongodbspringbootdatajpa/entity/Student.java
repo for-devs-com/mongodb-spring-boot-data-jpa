@@ -12,16 +12,15 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-//Student is document/row in the student collection/table
+//Student is a document object in the student collection.
+//Just like in SQL databases, Student is a row object in a table.
 @Document(collection = "student")
 public class Student {
 
-    @Id //the unique identifier
+    @Id //the unique identifier. By default, auto generate it.
     private String id;
     private String name;
     private String email;
     private Department department;
     private List<Subject> subjects;
-
-
 }
