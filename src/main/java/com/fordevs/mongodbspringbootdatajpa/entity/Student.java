@@ -17,6 +17,7 @@ import java.util.List;
 @Document(collection = "student")
 public class Student {
 
+    //remember to use @PersistenceContructor when you have more than one constructor for your collection
     @Id //the unique identifier. By default, auto generate it.
     private String id;
     private String name;
